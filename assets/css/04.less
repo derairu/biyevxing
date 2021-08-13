@@ -1,0 +1,249 @@
+/* banner */
+.banner{
+    // background:#000;
+    background:transparent;
+
+    // 视频
+    #background{
+        position: absolute;
+        right:0;
+        bottom:0;
+        min-width:100%;
+        min-height:100%;
+        width:auto;
+        height:auto;
+        z-index:-1000;
+    }
+
+    .box{
+        text-align: center;
+        padding:5em 0em 6.2em;
+
+        .title{
+            font-family: OSLight;
+            font-size:3em;
+            text-transform: uppercase;
+            color:#fff;
+
+            p{
+                font-family: OSBold;
+                color:#fcac45;
+            }
+        }
+
+
+        .info{
+            margin-bottom:1em;
+            color: #fff;
+            font-size:1.4em;
+            font-family: OSLight;
+
+            p{
+                font-family: OSBold;
+                color: #fff;
+            }
+                
+        }
+
+        .btn{
+            margin-top: 5em;
+            width: 120px;
+            height: 30px;
+            background: blue;
+            transition: all linear .2s;
+
+            span{
+                color:#fff;
+            }
+
+            &:hover{
+                transform:translateY(-4px);
+                box-shadow: 0px 5px 15px #ffff;
+                cursor: pointer;
+            }
+        }
+    }
+    @media screen and (max-width:415px) {
+        .box{
+            padding: 4em 0 6.2em;
+            .title{
+                font-size: 30px;
+            }
+            .info{
+                font-size: 12px;
+            }
+        }
+        
+    }
+}
+
+//temt
+.temt{
+    background: #fff;
+    margin-top: -1em;
+
+    .boxs{
+        .title{
+            padding: 2em 0 1em 0;
+            text-align: center;
+            font-size: 30px;
+            font-weight: bold;
+            color: #2479e4;
+            background: url(../images/xiahua_03.png) no-repeat bottom center;
+        }
+
+        .cont{
+            margin-top: 6em;
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            padding-bottom: 3em;
+
+            .item{
+                width: 25%;
+                text-align: center;
+                background: #ebf3fd;
+
+                .bum1{
+                    margin-top: 3em;
+                    transition: all linear .2s;
+
+                    &:hover{
+                        transform: scale(1.1);
+                        cursor: pointer;
+                    }
+                    
+                }
+                .list p{
+                    font-size: 20px;
+                    margin: 5px 0;
+                }
+            }
+        }
+    }
+
+    @media screen and (max-width:1181px) {
+        .boxs{
+            .cont{
+                .item{
+                    .bum1 img{
+                        width: 21%;
+                    }
+
+                }
+            }
+        }
+        
+    }
+
+    @media screen and (max-width:985px) {
+        .boxs{
+            .cont{
+                .item{
+                    .bum1{
+                        margin-top: 1em;
+                        img{
+                            width: 20%;
+                        }
+                    } 
+                    .list{
+                        p{
+                            font-size: 10px;
+                        }
+                        span{
+                            font-size: 1px;
+                        }
+                    }
+
+                }
+            }
+        }
+        
+    }
+
+    @media screen and (max-width:587px) {
+        .boxs{
+            .cont{
+                flex-wrap: wrap;
+                justify-content: space-between;
+
+                .item{
+                    width: 50%;
+                }
+            }
+        }
+        
+    }
+}
+
+//ster
+.ster{
+    .box{
+        margin-top: 9em;
+        display: flex;
+        justify-content: space-between;
+
+        .bum{
+            width: 14%;
+            text-align: center;
+            margin-bottom: 9em;
+
+            img{
+                margin-bottom: 1em;
+                transition: all linear .2s;
+
+                &:hover{
+                    transform: scale(1.1);
+                    cursor: pointer;
+                }
+            }
+
+            p{
+                margin-top: 5em;
+                color: #2479e4;
+            }
+            span{
+                font-size: 20px;
+            }
+        }
+    }
+}
+
+//about
+.about{
+    margin-top: 9em;
+    .box{
+        margin-top: 4em;
+
+        .title{
+            padding: 2em 0 1em 0;
+            text-align: center;
+            font-size: 30px;
+            font-weight: bold;
+            color: #2479e4;
+            background: url(../images/xiahua_03.png) no-repeat bottom center;
+        }
+
+        .cont{
+            margin-top: 5em;
+            display: flex;
+            justify-content: space-between;
+
+            .bum1{
+                width: 20%;
+                text-align: center;
+                .txt{
+                    p{
+                        font-size: 20px;
+                        padding: 1em 0;
+
+                        &:hover{
+                            color: #2479e4;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
